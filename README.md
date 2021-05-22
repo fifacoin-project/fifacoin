@@ -72,3 +72,47 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
     make -f Makefile.test
     ./fifacoin-qt_test
 
+##Starting wallet Fifacoin linux
+
+VM@USER$
+sudo apt-get install git
+
+sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
+
+sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
+
+sudo apt-get install libboost-all-dev
+
+sudo apt-get install software-properties-common
+
+sudo add-apt-repository ppa:bitcoin/bitcoin
+
+sudo apt-get update
+
+sudo apt-get install libdb4.8-dev libdb4.8++-dev
+
+sudo apt-get install libminiupnpc-dev
+
+sudo apt-get install libzmq3-dev
+
+sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
+
+sudo apt-get install libqt4-dev libprotobuf-dev protobuf-compiler
+
+VM@USER$ cd Desktop/
+
+sudo git clone https://github.com/fifacoin-project/fifacoin.git
+
+VM@USER/Desktop$ cd fifacoin/
+
+VM@USER/Desktop/fifacoin$ qmake
+
+VM@USER/Desktop/fifacoin$ make
+
+VM@USER/Desktop/fifacoin$ cd src/
+
+VM@USER/Desktop/fifacoin/src$ make -f makefile.unix
+
+VM@USER/Desktop/fifacoin/src$ cd ..
+
+VM@USER/Desktop/fifacoin$ ./fifacoin-qt
