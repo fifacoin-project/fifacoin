@@ -1,7 +1,7 @@
 Fifacoin integration/staging tree
 ================================
 
-http://www.fifacoin.org
+![banner](https://user-images.githubusercontent.com/84254341/119240528-75890f00-bb26-11eb-8c02-2a9925f0976e.png)
 
 Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2011-2014 Litecoin Developers
